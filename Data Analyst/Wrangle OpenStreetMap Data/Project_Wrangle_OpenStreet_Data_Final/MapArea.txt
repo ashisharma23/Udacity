@@ -1,0 +1,10 @@
+Map Area
+
+I am using the OpenStreetMap data of San Jose, CA area downloaded from
+https://s3.amazonaws.com/metro-extracts.mapzen.com/san-jose_california.osm.bz2, on Jan 7, 2018.
+
+City of San Jose, third most populous city in California and the tenth most populous in United States.
+It is an economic, cultural, and political center of Silicon Valley and the largest city in Northern California.
+Therefore , I find it interesting to investigate and gain more insights from this dataset.
+
+The description of the OpenStreetMap XML format can be found at https://wiki.openstreetmap.org/wiki/OS_XML 

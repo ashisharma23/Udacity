@@ -1,0 +1,23 @@
+1) Quality of Code  > The poi_id.py file gave the following error: ValueError: Empty data passed with indices specified.
+Comments: I am not facing this error at my end on my machine, however I have made below change in poi_id.py file:
+Old : df = pd.DataFrame(data, columns = columns, index=keys)
+New : df = pd.DataFrame(data, columns = columns, index=keys, copy = True)
+################################################################
+2) Validate and Evaluate > The definition for precision is correct, but the definition for recall isn't. Try to redefine recall in the context of the project task. The following link may be helpful when defining recall: https://www.quora.com/What-is-the-best-way-to-understand-the-terms-precision-and-recall
+Comments: Identify Fraud from Enron Email_Report.docx has been updated for definitions and confusion matrix
+#################################################################
+3) When tester.py is used to evaluate performance, precision and recall are both at least 0.3.
+Comments: I am not sure if this requires any change or it is just a comment, as project review says "3 specifications require changes"
+Need your review feedback on this
+#################################################################
+4) Suggestion for poi_pi.py > create_new_features(df) :
+Given the limitations of our dataset (low number of data points, low proportion of POIs), we may accept the engineered features from a practical standpoint. However, using some features like from_poi_to_this_person, from_this_person_to_poi, shared_receipt_with_poi to engineer new features can potentially create a data leakage. This can hamper the model's ability to generalize on unseen data and can give the false effect that the model performs really well. The features mentioned contain information that is used to create the feature, while also containing information about the target (POI/Non-POI).
+Comments: Thanks for providing your inputs. Can you provide more insights how it have can effect overall. My rationale was 
+we can create as many new features as we want and Kbest and SelectPercentile will handle feature selection themselves. 
+Please share some videos and links where I can explore this aspect while exploring data to help me understand more.
+I tried to remove these features from my code, and the accuracy and ROC went down. Hence I have not made any change at this point of time for the same.
+5) # Review comment #2 update
+	#df = df.drop(columns = ['director_fees'])
+	df = df.drop(['director_fees'], axis=1)
+
+	

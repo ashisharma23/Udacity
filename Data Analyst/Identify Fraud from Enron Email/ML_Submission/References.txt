@@ -1,0 +1,15 @@
+Modified Code Files	: poi_id.py
+Final Dataset		: my_dataset.pkl
+Final Classifier	: my_classifier.pkl
+Final Feature List	: my_feature_list.pkl
+
+https://www.quora.com/What-is-the-best-way-to-understand-the-terms-precision-and-recall
+https://en.wikipedia.org/wiki/Precision_and_recall
+https://stackoverflow.com/questions/32889929/gridsearchcv-scoring-parameter-using-scoring-f1-or-scoring-none-by-default-u
+https://stackoverflow.com/questions/18306416/adaboostclassifier-with-different-base-learners
+https://github.com/jasonicarter/udacity/tree/master/P5_Enron_Email_Data_Machine_Learning/final_project
+https://www.analyticsvidhya.com/blog/2015/11/quick-introduction-boosting-algorithms-machine-learning/
+https://civisanalytics.com/blog/data-science/2016/01/06/workflows-python-using-pipeline-gridsearchcv-for-compact-code/
+http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SelectKBest.html
+http://scikit-learn.org/stable/modules/pipeline.html
+https://civisanalytics.com/blog/data-science/2015/12/17/workflows-in-python-getting-data-ready-to-build-models/

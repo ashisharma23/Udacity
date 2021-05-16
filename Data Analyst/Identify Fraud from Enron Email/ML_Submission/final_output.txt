@@ -1,0 +1,844 @@
+########## Loading Dataset ##########
+##### data_dict of length 146 loaded successfully #####
+Missing count in data set
+
+{'salary': 34.93150684931507, 'to_messages': 41.0958904109589, 'deferral_payments': 73.28767123287672, 'total_payments': 14.383561643835616, 'exercised_stock_options': 30.136986301369863, 'bonus': 43.83561643835616, 'director_fees': 88.35616438356165, 'restricted_stock_deferred': 87.67123287671232, 'total_stock_value': 13.698630136986301, 'expenses': 34.93150684931507, 'from_poi_to_this_person': 41.0958904109589, 'loan_advances': 97.26027397260275, 'from_messages': 41.0958904109589, 'other': 36.3013698630137, 'from_this_person_to_poi': 41.0958904109589, 'poi': 0.0, 'long_term_incentive': 54.794520547945204, 'shared_receipt_with_poi': 41.0958904109589, 'restricted_stock': 24.65753424657534, 'deferred_income': 66.43835616438356}
+        to_messages  from_poi_to_this_person  from_messages  \
+count    146.000000               146.000000     146.000000   
+mean    1635.041096                50.089041     375.547945   
+std     2051.932777                69.164464    1437.152643   
+min       57.000000                 0.000000      12.000000   
+25%      904.250000                25.375000      36.000000   
+50%      944.000000                26.500000      41.000000   
+75%     1757.250000                46.250000      51.250000   
+max    15149.000000               528.000000   14368.000000   
+
+       from_this_person_to_poi  shared_receipt_with_poi  
+count               146.000000               146.000000  
+mean                 27.013699               964.356164  
+std                  78.515932               950.962501  
+min                   0.000000                 2.000000  
+25%                   6.000000               590.250000  
+50%                   6.000000               594.000000  
+75%                  15.000000              1117.500000  
+max                 609.000000              5521.000000  
+              poi        salary         bonus  long_term_incentive  \
+count  146.000000  1.460000e+02  1.460000e+02         1.460000e+02   
+mean     0.123288  3.658114e+05  1.333474e+06         6.646839e+05   
+std      0.329899  2.203575e+06  8.094029e+06         4.046072e+06   
+min      0.000000  0.000000e+00  0.000000e+00         0.000000e+00   
+25%      0.000000  0.000000e+00  0.000000e+00         0.000000e+00   
+50%      0.000000  2.105960e+05  3.000000e+05         0.000000e+00   
+75%      0.000000  2.708505e+05  8.000000e+05         3.750648e+05   
+max      1.000000  2.670423e+07  9.734362e+07         4.852193e+07   
+
+       deferred_income  deferral_payments  loan_advances         other  \
+count     1.460000e+02       1.460000e+02   1.460000e+02  1.460000e+02   
+mean     -3.827622e+05       4.387965e+05   1.149658e+06  5.844875e+05   
+std       2.378250e+06       2.741325e+06   9.649342e+06  3.682478e+06   
+min      -2.799289e+07      -1.025000e+05   0.000000e+00  0.000000e+00   
+25%      -3.792600e+04       0.000000e+00   0.000000e+00  0.000000e+00   
+50%       0.000000e+00       0.000000e+00   0.000000e+00  9.190000e+02   
+75%       0.000000e+00       9.684500e+03   0.000000e+00  1.506065e+05   
+max       0.000000e+00       3.208340e+07   8.392500e+07  4.266759e+07   
+
+           expenses  director_fees  total_payments  exercised_stock_options  \
+count  1.460000e+02   1.460000e+02    1.460000e+02             1.460000e+02   
+mean   7.171504e+04   1.915777e+04    4.245022e+06             4.270740e+06   
+std    4.327076e+05   1.188508e+05    2.692086e+07             2.608673e+07   
+min    0.000000e+00   0.000000e+00    0.000000e+00             0.000000e+00   
+25%    0.000000e+00   0.000000e+00    8.839225e+04             0.000000e+00   
+50%    2.193700e+04   0.000000e+00    9.138250e+05             6.082935e+05   
+75%    5.480950e+04   0.000000e+00    1.917959e+06             1.714221e+06   
+max    5.235198e+06   1.398517e+06    3.098866e+08             3.117640e+08   
+
+       restricted_stock  restricted_stock_deferred  total_stock_value  \
+count      1.460000e+02               1.460000e+02       1.460000e+02   
+mean       1.785237e+06              -1.037916e+05       5.952185e+06   
+std        1.089408e+07               6.792772e+05       3.625214e+07   
+min        0.000000e+00              -7.576788e+06       0.000000e+00   
+25%        4.409300e+04               0.000000e+00       2.534955e+05   
+50%        3.619780e+05               0.000000e+00       9.805345e+05   
+75%        8.651810e+05               0.000000e+00       2.453312e+06   
+max        1.303223e+08               0.000000e+00       4.345095e+08   
+
+        to_messages  from_poi_to_this_person  from_messages  \
+count    146.000000               146.000000     146.000000   
+mean    1635.041096                50.089041     375.547945   
+std     2051.932777                69.164464    1437.152643   
+min       57.000000                 0.000000      12.000000   
+25%      904.250000                25.375000      36.000000   
+50%      944.000000                26.500000      41.000000   
+75%     1757.250000                46.250000      51.250000   
+max    15149.000000               528.000000   14368.000000   
+
+       from_this_person_to_poi  shared_receipt_with_poi  
+count               146.000000               146.000000  
+mean                 27.013699               964.356164  
+std                  78.515932               950.962501  
+min                   0.000000                 2.000000  
+25%                   6.000000               590.250000  
+50%                   6.000000               594.000000  
+75%                  15.000000              1117.500000  
+max                 609.000000              5521.000000  
+#######Financial feature Name:  salary   Start ###########
+                    poi     salary      bonus  long_term_incentive  \
+SKILLING JEFFREY K  1.0  1111258.0  5600000.0            1920000.0   
+LAY KENNETH L       1.0  1072321.0  7000000.0            3600000.0   
+FREVERT MARK A      0.0  1060932.0  2000000.0            1617011.0   
+
+                    deferred_income  deferral_payments  loan_advances  \
+SKILLING JEFFREY K              0.0                0.0            0.0   
+LAY KENNETH L              300000.0           202911.0     81525000.0   
+FREVERT MARK A            3367011.0          6426990.0      2000000.0   
+
+                         other  expenses  director_fees  total_payments  \
+SKILLING JEFFREY K     22122.0   29336.0            0.0       8682716.0   
+LAY KENNETH L       10359729.0   99832.0            0.0     103559793.0   
+FREVERT MARK A       7427621.0   86987.0            0.0      17252530.0   
+
+                    exercised_stock_options  restricted_stock  \
+SKILLING JEFFREY K               19250000.0         6843672.0   
+LAY KENNETH L                    34348384.0        14761694.0   
+FREVERT MARK A                   10433518.0         4188667.0   
+
+                    restricted_stock_deferred  total_stock_value  to_messages  \
+SKILLING JEFFREY K                        0.0         26093672.0       3627.0   
+LAY KENNETH L                             0.0         49110078.0       4273.0   
+FREVERT MARK A                            0.0         14622185.0       3275.0   
+
+                    from_poi_to_this_person  from_messages  \
+SKILLING JEFFREY K                     88.0          108.0   
+LAY KENNETH L                         123.0           36.0   
+FREVERT MARK A                        242.0           21.0   
+
+                    from_this_person_to_poi  shared_receipt_with_poi  
+SKILLING JEFFREY K                     30.0                   2042.0  
+LAY KENNETH L                          16.0                   2411.0  
+FREVERT MARK A                          6.0                   2979.0  
+#######Financial feature Name:  salary   End ###########
+#######Financial feature Name:  bonus   Start ###########
+                    poi     salary      bonus  long_term_incentive  \
+LAVORATO JOHN J     0.0   339288.0  8000000.0            2035380.0   
+LAY KENNETH L       1.0  1072321.0  7000000.0            3600000.0   
+SKILLING JEFFREY K  1.0  1111258.0  5600000.0            1920000.0   
+
+                    deferred_income  deferral_payments  loan_advances  \
+LAVORATO JOHN J                 0.0                0.0            0.0   
+LAY KENNETH L              300000.0           202911.0     81525000.0   
+SKILLING JEFFREY K              0.0                0.0            0.0   
+
+                         other  expenses  director_fees  total_payments  \
+LAVORATO JOHN J         1552.0   49537.0            0.0      10425757.0   
+LAY KENNETH L       10359729.0   99832.0            0.0     103559793.0   
+SKILLING JEFFREY K     22122.0   29336.0            0.0       8682716.0   
+
+                    exercised_stock_options  restricted_stock  \
+LAVORATO JOHN J                   4158995.0         1008149.0   
+LAY KENNETH L                    34348384.0        14761694.0   
+SKILLING JEFFREY K               19250000.0         6843672.0   
+
+                    restricted_stock_deferred  total_stock_value  to_messages  \
+LAVORATO JOHN J                           0.0          5167144.0       7259.0   
+LAY KENNETH L                             0.0         49110078.0       4273.0   
+SKILLING JEFFREY K                        0.0         26093672.0       3627.0   
+
+                    from_poi_to_this_person  from_messages  \
+LAVORATO JOHN J                       528.0         2585.0   
+LAY KENNETH L                         123.0           36.0   
+SKILLING JEFFREY K                     88.0          108.0   
+
+                    from_this_person_to_poi  shared_receipt_with_poi  
+LAVORATO JOHN J                       411.0                   3962.0  
+LAY KENNETH L                          16.0                   2411.0  
+SKILLING JEFFREY K                     30.0                   2042.0  
+#######Financial feature Name:  bonus   End ###########
+#######Financial feature Name:  long_term_incentive   Start ###########
+                 poi     salary      bonus  long_term_incentive  \
+MARTIN AMANDA K  0.0   349487.0        0.0            5145434.0   
+LAY KENNETH L    1.0  1072321.0  7000000.0            3600000.0   
+ECHOLS JOHN B    0.0   182245.0   200000.0            2234774.0   
+
+                 deferred_income  deferral_payments  loan_advances  \
+MARTIN AMANDA K              0.0            85430.0            0.0   
+LAY KENNETH L           300000.0           202911.0     81525000.0   
+ECHOLS JOHN B                0.0                0.0            0.0   
+
+                      other  expenses  director_fees  total_payments  \
+MARTIN AMANDA K   2818454.0    8211.0            0.0       8407016.0   
+LAY KENNETH L    10359729.0   99832.0            0.0     103559793.0   
+ECHOLS JOHN B       53775.0   21530.0            0.0       2692324.0   
+
+                 exercised_stock_options  restricted_stock  \
+MARTIN AMANDA K                2070306.0               0.0   
+LAY KENNETH L                 34348384.0        14761694.0   
+ECHOLS JOHN B                   601438.0          407503.0   
+
+                 restricted_stock_deferred  total_stock_value  to_messages  \
+MARTIN AMANDA K                        0.0          2070306.0       1522.0   
+LAY KENNETH L                          0.0         49110078.0       4273.0   
+ECHOLS JOHN B                          0.0          1008941.0        944.0   
+
+                 from_poi_to_this_person  from_messages  \
+MARTIN AMANDA K                      8.0          230.0   
+LAY KENNETH L                      123.0           36.0   
+ECHOLS JOHN B                       26.5           41.0   
+
+                 from_this_person_to_poi  shared_receipt_with_poi  
+MARTIN AMANDA K                      0.0                    477.0  
+LAY KENNETH L                       16.0                   2411.0  
+ECHOLS JOHN B                        6.0                    594.0  
+#######Financial feature Name:  long_term_incentive   End ###########
+#######Financial feature Name:  deferred_income   Start ###########
+                poi     salary      bonus  long_term_incentive  \
+RICE KENNETH D  1.0   420636.0  1750000.0            1617011.0   
+FREVERT MARK A  0.0  1060932.0  2000000.0            1617011.0   
+HANNON KEVIN P  1.0   243293.0  1500000.0            1617011.0   
+
+                deferred_income  deferral_payments  loan_advances      other  \
+RICE KENNETH D        3504386.0                0.0            0.0   174839.0   
+FREVERT MARK A        3367011.0          6426990.0      2000000.0  7427621.0   
+HANNON KEVIN P        3117011.0                0.0            0.0    11350.0   
+
+                expenses  director_fees  total_payments  \
+RICE KENNETH D   46950.0            0.0        505050.0   
+FREVERT MARK A   86987.0            0.0      17252530.0   
+HANNON KEVIN P   34039.0            0.0        288682.0   
+
+                exercised_stock_options  restricted_stock  \
+RICE KENNETH D               19794175.0         2748364.0   
+FREVERT MARK A               10433518.0         4188667.0   
+HANNON KEVIN P                5538001.0          853064.0   
+
+                restricted_stock_deferred  total_stock_value  to_messages  \
+RICE KENNETH D                        0.0         22542539.0        905.0   
+FREVERT MARK A                        0.0         14622185.0       3275.0   
+HANNON KEVIN P                        0.0          6391065.0       1045.0   
+
+                from_poi_to_this_person  from_messages  \
+RICE KENNETH D                     42.0           18.0   
+FREVERT MARK A                    242.0           21.0   
+HANNON KEVIN P                     32.0           32.0   
+
+                from_this_person_to_poi  shared_receipt_with_poi  
+RICE KENNETH D                      4.0                    864.0  
+FREVERT MARK A                      6.0                   2979.0  
+HANNON KEVIN P                     21.0                   1035.0  
+#######Financial feature Name:  deferred_income   End ###########
+#######Financial feature Name:  deferral_payments   Start ###########
+                  poi     salary      bonus  long_term_incentive  \
+FREVERT MARK A    0.0  1060932.0  2000000.0            1617011.0   
+HORTON STANLEY C  0.0        0.0        0.0                  0.0   
+HUMPHREY GENE E   0.0   130724.0        0.0                  0.0   
+
+                  deferred_income  deferral_payments  loan_advances  \
+FREVERT MARK A          3367011.0          6426990.0      2000000.0   
+HORTON STANLEY C              0.0          3131860.0            0.0   
+HUMPHREY GENE E               0.0          2964506.0            0.0   
+
+                      other  expenses  director_fees  total_payments  \
+FREVERT MARK A    7427621.0   86987.0            0.0      17252530.0   
+HORTON STANLEY C        0.0       0.0            0.0       3131860.0   
+HUMPHREY GENE E         0.0    4994.0            0.0       3100224.0   
+
+                  exercised_stock_options  restricted_stock  \
+FREVERT MARK A                 10433518.0         4188667.0   
+HORTON STANLEY C                5210569.0         2046079.0   
+HUMPHREY GENE E                 2282768.0               0.0   
+
+                  restricted_stock_deferred  total_stock_value  to_messages  \
+FREVERT MARK A                          0.0         14622185.0       3275.0   
+HORTON STANLEY C                        0.0          7256648.0       2350.0   
+HUMPHREY GENE E                         0.0          2282768.0        128.0   
+
+                  from_poi_to_this_person  from_messages  \
+FREVERT MARK A                      242.0           21.0   
+HORTON STANLEY C                     44.0         1073.0   
+HUMPHREY GENE E                      10.0           17.0   
+
+                  from_this_person_to_poi  shared_receipt_with_poi  
+FREVERT MARK A                        6.0                   2979.0  
+HORTON STANLEY C                     15.0                   1074.0  
+HUMPHREY GENE E                      17.0                    119.0  
+#######Financial feature Name:  deferral_payments   End ###########
+#######Financial feature Name:  loan_advances   Start ###########
+                  poi     salary      bonus  long_term_incentive  \
+LAY KENNETH L     1.0  1072321.0  7000000.0            3600000.0   
+FREVERT MARK A    0.0  1060932.0  2000000.0            1617011.0   
+PICKERING MARK R  0.0   655037.0   300000.0                  0.0   
+
+                  deferred_income  deferral_payments  loan_advances  \
+LAY KENNETH L            300000.0           202911.0     81525000.0   
+FREVERT MARK A          3367011.0          6426990.0      2000000.0   
+PICKERING MARK R              0.0                0.0       400000.0   
+
+                       other  expenses  director_fees  total_payments  \
+LAY KENNETH L     10359729.0   99832.0            0.0     103559793.0   
+FREVERT MARK A     7427621.0   86987.0            0.0      17252530.0   
+PICKERING MARK R         0.0   31653.0            0.0       1386690.0   
+
+                  exercised_stock_options  restricted_stock  \
+LAY KENNETH L                  34348384.0        14761694.0   
+FREVERT MARK A                 10433518.0         4188667.0   
+PICKERING MARK R                  28798.0               0.0   
+
+                  restricted_stock_deferred  total_stock_value  to_messages  \
+LAY KENNETH L                           0.0         49110078.0       4273.0   
+FREVERT MARK A                          0.0         14622185.0       3275.0   
+PICKERING MARK R                        0.0            28798.0        898.0   
+
+                  from_poi_to_this_person  from_messages  \
+LAY KENNETH L                       123.0           36.0   
+FREVERT MARK A                      242.0           21.0   
+PICKERING MARK R                      7.0           67.0   
+
+                  from_this_person_to_poi  shared_receipt_with_poi  
+LAY KENNETH L                        16.0                   2411.0  
+FREVERT MARK A                        6.0                   2979.0  
+PICKERING MARK R                      0.0                    728.0  
+#######Financial feature Name:  loan_advances   End ###########
+#######Financial feature Name:  other   Start ###########
+                 poi     salary      bonus  long_term_incentive  \
+LAY KENNETH L    1.0  1072321.0  7000000.0            3600000.0   
+FREVERT MARK A   0.0  1060932.0  2000000.0            1617011.0   
+MARTIN AMANDA K  0.0   349487.0        0.0            5145434.0   
+
+                 deferred_income  deferral_payments  loan_advances  \
+LAY KENNETH L           300000.0           202911.0     81525000.0   
+FREVERT MARK A         3367011.0          6426990.0      2000000.0   
+MARTIN AMANDA K              0.0            85430.0            0.0   
+
+                      other  expenses  director_fees  total_payments  \
+LAY KENNETH L    10359729.0   99832.0            0.0     103559793.0   
+FREVERT MARK A    7427621.0   86987.0            0.0      17252530.0   
+MARTIN AMANDA K   2818454.0    8211.0            0.0       8407016.0   
+
+                 exercised_stock_options  restricted_stock  \
+LAY KENNETH L                 34348384.0        14761694.0   
+FREVERT MARK A                10433518.0         4188667.0   
+MARTIN AMANDA K                2070306.0               0.0   
+
+                 restricted_stock_deferred  total_stock_value  to_messages  \
+LAY KENNETH L                          0.0         49110078.0       4273.0   
+FREVERT MARK A                         0.0         14622185.0       3275.0   
+MARTIN AMANDA K                        0.0          2070306.0       1522.0   
+
+                 from_poi_to_this_person  from_messages  \
+LAY KENNETH L                      123.0           36.0   
+FREVERT MARK A                     242.0           21.0   
+MARTIN AMANDA K                      8.0          230.0   
+
+                 from_this_person_to_poi  shared_receipt_with_poi  
+LAY KENNETH L                       16.0                   2411.0  
+FREVERT MARK A                       6.0                   2979.0  
+MARTIN AMANDA K                      0.0                    477.0  
+#######Financial feature Name:  other   End ###########
+#######Financial feature Name:  expenses   Start ###########
+                    poi    salary      bonus  long_term_incentive  \
+MCCLELLAN GEORGE    0.0  263413.0   900000.0                  0.0   
+URQUHART JOHN A     0.0       0.0        0.0                  0.0   
+SHANKMAN JEFFREY A  0.0  304110.0  2000000.0             554422.0   
+
+                    deferred_income  deferral_payments  loan_advances  \
+MCCLELLAN GEORGE           125000.0                0.0            0.0   
+URQUHART JOHN A             36666.0                0.0            0.0   
+SHANKMAN JEFFREY A              0.0                0.0            0.0   
+
+                      other  expenses  director_fees  total_payments  \
+MCCLELLAN GEORGE    51587.0  228763.0            0.0       1318763.0   
+URQUHART JOHN A         0.0  228656.0        36666.0        228656.0   
+SHANKMAN JEFFREY A   1191.0  178979.0            0.0       3038702.0   
+
+                    exercised_stock_options  restricted_stock  \
+MCCLELLAN GEORGE                   506765.0          441096.0   
+URQUHART JOHN A                         0.0               0.0   
+SHANKMAN JEFFREY A                1441898.0          630137.0   
+
+                    restricted_stock_deferred  total_stock_value  to_messages  \
+MCCLELLAN GEORGE                          0.0           947861.0       1744.0   
+URQUHART JOHN A                           0.0                0.0        944.0   
+SHANKMAN JEFFREY A                        0.0          2072035.0       3221.0   
+
+                    from_poi_to_this_person  from_messages  \
+MCCLELLAN GEORGE                       52.0           49.0   
+URQUHART JOHN A                        26.5           41.0   
+SHANKMAN JEFFREY A                     94.0         2681.0   
+
+                    from_this_person_to_poi  shared_receipt_with_poi  
+MCCLELLAN GEORGE                        0.0                   1469.0  
+URQUHART JOHN A                         6.0                    594.0  
+SHANKMAN JEFFREY A                     83.0                   1730.0  
+#######Financial feature Name:  expenses   End ###########
+#######Financial feature Name:  director_fees   Start ###########
+                    poi  salary  bonus  long_term_incentive  deferred_income  \
+SAVAGE FRANK        0.0     0.0    0.0                  0.0         121284.0   
+GRAMM WENDY L       0.0     0.0    0.0                  0.0              0.0   
+BLAKE JR. NORMAN P  0.0     0.0    0.0                  0.0         113784.0   
+
+                    deferral_payments  loan_advances  other  expenses  \
+SAVAGE FRANK                      0.0            0.0    0.0       0.0   
+GRAMM WENDY L                     0.0            0.0    0.0       0.0   
+BLAKE JR. NORMAN P                0.0            0.0    0.0    1279.0   
+
+                    director_fees  total_payments  exercised_stock_options  \
+SAVAGE FRANK             125034.0          3750.0                      0.0   
+GRAMM WENDY L            119292.0        119292.0                      0.0   
+BLAKE JR. NORMAN P       113784.0          1279.0                      0.0   
+
+                    restricted_stock  restricted_stock_deferred  \
+SAVAGE FRANK                     0.0                        0.0   
+GRAMM WENDY L                    0.0                        0.0   
+BLAKE JR. NORMAN P               0.0                        0.0   
+
+                    total_stock_value  to_messages  from_poi_to_this_person  \
+SAVAGE FRANK                      0.0        944.0                     26.5   
+GRAMM WENDY L                     0.0        944.0                     26.5   
+BLAKE JR. NORMAN P                0.0        944.0                     26.5   
+
+                    from_messages  from_this_person_to_poi  \
+SAVAGE FRANK                 41.0                      6.0   
+GRAMM WENDY L                41.0                      6.0   
+BLAKE JR. NORMAN P           41.0                      6.0   
+
+                    shared_receipt_with_poi  
+SAVAGE FRANK                          594.0  
+GRAMM WENDY L                         594.0  
+BLAKE JR. NORMAN P                    594.0  
+#######Financial feature Name:  director_fees   End ###########
+#######Financial feature Name:  total_payments   Start ###########
+                 poi     salary      bonus  long_term_incentive  \
+LAY KENNETH L    1.0  1072321.0  7000000.0            3600000.0   
+FREVERT MARK A   0.0  1060932.0  2000000.0            1617011.0   
+LAVORATO JOHN J  0.0   339288.0  8000000.0            2035380.0   
+
+                 deferred_income  deferral_payments  loan_advances  \
+LAY KENNETH L           300000.0           202911.0     81525000.0   
+FREVERT MARK A         3367011.0          6426990.0      2000000.0   
+LAVORATO JOHN J              0.0                0.0            0.0   
+
+                      other  expenses  director_fees  total_payments  \
+LAY KENNETH L    10359729.0   99832.0            0.0     103559793.0   
+FREVERT MARK A    7427621.0   86987.0            0.0      17252530.0   
+LAVORATO JOHN J      1552.0   49537.0            0.0      10425757.0   
+
+                 exercised_stock_options  restricted_stock  \
+LAY KENNETH L                 34348384.0        14761694.0   
+FREVERT MARK A                10433518.0         4188667.0   
+LAVORATO JOHN J                4158995.0         1008149.0   
+
+                 restricted_stock_deferred  total_stock_value  to_messages  \
+LAY KENNETH L                          0.0         49110078.0       4273.0   
+FREVERT MARK A                         0.0         14622185.0       3275.0   
+LAVORATO JOHN J                        0.0          5167144.0       7259.0   
+
+                 from_poi_to_this_person  from_messages  \
+LAY KENNETH L                      123.0           36.0   
+FREVERT MARK A                     242.0           21.0   
+LAVORATO JOHN J                    528.0         2585.0   
+
+                 from_this_person_to_poi  shared_receipt_with_poi  
+LAY KENNETH L                       16.0                   2411.0  
+FREVERT MARK A                       6.0                   2979.0  
+LAVORATO JOHN J                    411.0                   3962.0  
+#######Financial feature Name:  total_payments   End ###########
+#######Financial feature Name:  exercised_stock_options   Start ###########
+                poi     salary      bonus  long_term_incentive  \
+LAY KENNETH L   1.0  1072321.0  7000000.0            3600000.0   
+HIRKO JOSEPH    1.0        0.0        0.0                  0.0   
+RICE KENNETH D  1.0   420636.0  1750000.0            1617011.0   
+
+                deferred_income  deferral_payments  loan_advances       other  \
+LAY KENNETH L          300000.0           202911.0     81525000.0  10359729.0   
+HIRKO JOSEPH                0.0            10259.0            0.0      2856.0   
+RICE KENNETH D        3504386.0                0.0            0.0    174839.0   
+
+                expenses  director_fees  total_payments  \
+LAY KENNETH L    99832.0            0.0     103559793.0   
+HIRKO JOSEPH     77978.0            0.0         91093.0   
+RICE KENNETH D   46950.0            0.0        505050.0   
+
+                exercised_stock_options  restricted_stock  \
+LAY KENNETH L                34348384.0        14761694.0   
+HIRKO JOSEPH                 30766064.0               0.0   
+RICE KENNETH D               19794175.0         2748364.0   
+
+                restricted_stock_deferred  total_stock_value  to_messages  \
+LAY KENNETH L                         0.0         49110078.0       4273.0   
+HIRKO JOSEPH                          0.0         30766064.0       1875.0   
+RICE KENNETH D                        0.0         22542539.0        905.0   
+
+                from_poi_to_this_person  from_messages  \
+LAY KENNETH L                     123.0           36.0   
+HIRKO JOSEPH                       62.0           44.5   
+RICE KENNETH D                     42.0           18.0   
+
+                from_this_person_to_poi  shared_receipt_with_poi  
+LAY KENNETH L                      16.0                   2411.0  
+HIRKO JOSEPH                       15.5                   1589.0  
+RICE KENNETH D                      4.0                    864.0  
+#######Financial feature Name:  exercised_stock_options   End ###########
+#######Financial feature Name:  restricted_stock   Start ###########
+                   poi     salary      bonus  long_term_incentive  \
+LAY KENNETH L      1.0  1072321.0  7000000.0            3600000.0   
+WHITE JR THOMAS E  0.0   317543.0   450000.0                  0.0   
+PAI LOU L          0.0   261879.0  1000000.0                  0.0   
+
+                   deferred_income  deferral_payments  loan_advances  \
+LAY KENNETH L             300000.0           202911.0     81525000.0   
+WHITE JR THOMAS E              0.0                0.0            0.0   
+PAI LOU L                      0.0                0.0            0.0   
+
+                        other  expenses  director_fees  total_payments  \
+LAY KENNETH L      10359729.0   99832.0            0.0     103559793.0   
+WHITE JR THOMAS E   1085463.0   81353.0            0.0       1934359.0   
+PAI LOU L           1829457.0   32047.0            0.0       3123383.0   
+
+                   exercised_stock_options  restricted_stock  \
+LAY KENNETH L                   34348384.0        14761694.0   
+WHITE JR THOMAS E                1297049.0        13847074.0   
+PAI LOU L                       15364167.0         8453763.0   
+
+                   restricted_stock_deferred  total_stock_value  to_messages  \
+LAY KENNETH L                            0.0         49110078.0       4273.0   
+WHITE JR THOMAS E                        0.0         15144123.0        944.0   
+PAI LOU L                                0.0         23817930.0        944.0   
+
+                   from_poi_to_this_person  from_messages  \
+LAY KENNETH L                        123.0           36.0   
+WHITE JR THOMAS E                     26.5           41.0   
+PAI LOU L                             26.5           41.0   
+
+                   from_this_person_to_poi  shared_receipt_with_poi  
+LAY KENNETH L                         16.0                   2411.0  
+WHITE JR THOMAS E                      6.0                    594.0  
+PAI LOU L                              6.0                    594.0  
+#######Financial feature Name:  restricted_stock   End ###########
+#######Financial feature Name:  restricted_stock_deferred   Start ###########
+                     poi    salary     bonus  long_term_incentive  \
+BHATNAGAR SANJAY     0.0       0.0       0.0                  0.0   
+DERRICK JR. JAMES V  0.0  492375.0  800000.0             484000.0   
+BANNANTINE JAMES M   0.0     477.0       0.0                  0.0   
+
+                     deferred_income  deferral_payments  loan_advances  \
+BHATNAGAR SANJAY                 0.0                0.0            0.0   
+DERRICK JR. JAMES V        1284000.0                0.0            0.0   
+BANNANTINE JAMES M            5104.0                0.0            0.0   
+
+                        other  expenses  director_fees  total_payments  \
+BHATNAGAR SANJAY          0.0  137864.0            0.0        137864.0   
+DERRICK JR. JAMES V    7482.0   51124.0            0.0        550981.0   
+BANNANTINE JAMES M   864523.0   56301.0            0.0        916197.0   
+
+                     exercised_stock_options  restricted_stock  \
+BHATNAGAR SANJAY                  15456290.0         2604490.0   
+DERRICK JR. JAMES V                8831913.0         1787380.0   
+BANNANTINE JAMES M                 4046157.0         1757552.0   
+
+                     restricted_stock_deferred  total_stock_value  \
+BHATNAGAR SANJAY                     2604490.0         15456290.0   
+DERRICK JR. JAMES V                  1787380.0          8831913.0   
+BANNANTINE JAMES M                    560222.0          5243487.0   
+
+                     to_messages  from_poi_to_this_person  from_messages  \
+BHATNAGAR SANJAY           523.0                      0.0           29.0   
+DERRICK JR. JAMES V       2181.0                     64.0          909.0   
+BANNANTINE JAMES M         566.0                     39.0           29.0   
+
+                     from_this_person_to_poi  shared_receipt_with_poi  
+BHATNAGAR SANJAY                         1.0                    463.0  
+DERRICK JR. JAMES V                     20.0                   1401.0  
+BANNANTINE JAMES M                       0.0                    465.0  
+#######Financial feature Name:  restricted_stock_deferred   End ###########
+#######Financial feature Name:  total_stock_value   Start ###########
+                    poi     salary      bonus  long_term_incentive  \
+LAY KENNETH L       1.0  1072321.0  7000000.0            3600000.0   
+HIRKO JOSEPH        1.0        0.0        0.0                  0.0   
+SKILLING JEFFREY K  1.0  1111258.0  5600000.0            1920000.0   
+
+                    deferred_income  deferral_payments  loan_advances  \
+LAY KENNETH L              300000.0           202911.0     81525000.0   
+HIRKO JOSEPH                    0.0            10259.0            0.0   
+SKILLING JEFFREY K              0.0                0.0            0.0   
+
+                         other  expenses  director_fees  total_payments  \
+LAY KENNETH L       10359729.0   99832.0            0.0     103559793.0   
+HIRKO JOSEPH            2856.0   77978.0            0.0         91093.0   
+SKILLING JEFFREY K     22122.0   29336.0            0.0       8682716.0   
+
+                    exercised_stock_options  restricted_stock  \
+LAY KENNETH L                    34348384.0        14761694.0   
+HIRKO JOSEPH                     30766064.0               0.0   
+SKILLING JEFFREY K               19250000.0         6843672.0   
+
+                    restricted_stock_deferred  total_stock_value  to_messages  \
+LAY KENNETH L                             0.0         49110078.0       4273.0   
+HIRKO JOSEPH                              0.0         30766064.0       1875.0   
+SKILLING JEFFREY K                        0.0         26093672.0       3627.0   
+
+                    from_poi_to_this_person  from_messages  \
+LAY KENNETH L                         123.0           36.0   
+HIRKO JOSEPH                           62.0           44.5   
+SKILLING JEFFREY K                     88.0          108.0   
+
+                    from_this_person_to_poi  shared_receipt_with_poi  
+LAY KENNETH L                          16.0                   2411.0  
+HIRKO JOSEPH                           15.5                   1589.0  
+SKILLING JEFFREY K                     30.0                   2042.0  
+#######Financial feature Name:  total_stock_value   End ###########
+#######Email feature Name:  to_messages   Start ###########
+                   poi    salary      bonus  long_term_incentive  \
+SHAPIRO RICHARD S  0.0  269076.0   650000.0                  0.0   
+KEAN STEVEN J      0.0  404338.0  1000000.0             300000.0   
+KITCHEN LOUISE     0.0  271442.0  3100000.0                  0.0   
+
+                   deferred_income  deferral_payments  loan_advances    other  \
+SHAPIRO RICHARD S              0.0                0.0            0.0    705.0   
+KEAN STEVEN J                  0.0                0.0            0.0   1231.0   
+KITCHEN LOUISE                 0.0                0.0            0.0  93925.0   
+
+                   expenses  director_fees  total_payments  \
+SHAPIRO RICHARD S  137767.0            0.0       1057548.0   
+KEAN STEVEN J       41953.0            0.0       1747522.0   
+KITCHEN LOUISE       5774.0            0.0       3471141.0   
+
+                   exercised_stock_options  restricted_stock  \
+SHAPIRO RICHARD S                 607837.0          379164.0   
+KEAN STEVEN J                    2022048.0         4131594.0   
+KITCHEN LOUISE                     81042.0          466101.0   
+
+                   restricted_stock_deferred  total_stock_value  to_messages  \
+SHAPIRO RICHARD S                        0.0           987001.0      15149.0   
+KEAN STEVEN J                            0.0          6153642.0      12754.0   
+KITCHEN LOUISE                           0.0           547143.0       8305.0   
+
+                   from_poi_to_this_person  from_messages  \
+SHAPIRO RICHARD S                     74.0         1215.0   
+KEAN STEVEN J                        140.0         6759.0   
+KITCHEN LOUISE                       251.0         1728.0   
+
+                   from_this_person_to_poi  shared_receipt_with_poi  
+SHAPIRO RICHARD S                     65.0                   4527.0  
+KEAN STEVEN J                        387.0                   3639.0  
+KITCHEN LOUISE                       194.0                   3669.0  
+#######Email feature Name:  to_messages   End ###########
+#######Email feature Name:  from_poi_to_this_person   Start ###########
+                  poi    salary      bonus  long_term_incentive  \
+LAVORATO JOHN J   0.0  339288.0  8000000.0            2035380.0   
+DIETRICH JANET R  0.0  250100.0   600000.0             556416.0   
+KITCHEN LOUISE    0.0  271442.0  3100000.0                  0.0   
+
+                  deferred_income  deferral_payments  loan_advances    other  \
+LAVORATO JOHN J               0.0                0.0            0.0   1552.0   
+DIETRICH JANET R              0.0                0.0            0.0    473.0   
+KITCHEN LOUISE                0.0                0.0            0.0  93925.0   
+
+                  expenses  director_fees  total_payments  \
+LAVORATO JOHN J    49537.0            0.0      10425757.0   
+DIETRICH JANET R    3475.0            0.0       1410464.0   
+KITCHEN LOUISE      5774.0            0.0       3471141.0   
+
+                  exercised_stock_options  restricted_stock  \
+LAVORATO JOHN J                 4158995.0         1008149.0   
+DIETRICH JANET R                1550019.0          315068.0   
+KITCHEN LOUISE                    81042.0          466101.0   
+
+                  restricted_stock_deferred  total_stock_value  to_messages  \
+LAVORATO JOHN J                         0.0          5167144.0       7259.0   
+DIETRICH JANET R                        0.0          1865087.0       2572.0   
+KITCHEN LOUISE                          0.0           547143.0       8305.0   
+
+                  from_poi_to_this_person  from_messages  \
+LAVORATO JOHN J                     528.0         2585.0   
+DIETRICH JANET R                    305.0           63.0   
+KITCHEN LOUISE                      251.0         1728.0   
+
+                  from_this_person_to_poi  shared_receipt_with_poi  
+LAVORATO JOHN J                     411.0                   3962.0  
+DIETRICH JANET R                     14.0                   1902.0  
+KITCHEN LOUISE                      194.0                   3669.0  
+#######Email feature Name:  from_poi_to_this_person   End ###########
+#######Email feature Name:  from_messages   Start ###########
+                     poi    salary      bonus  long_term_incentive  \
+KAMINSKI WINCENTY J  0.0  275101.0   400000.0             323466.0   
+KEAN STEVEN J        0.0  404338.0  1000000.0             300000.0   
+BECK SALLY W         0.0  231330.0   700000.0                  0.0   
+
+                     deferred_income  deferral_payments  loan_advances  \
+KAMINSKI WINCENTY J              0.0                0.0            0.0   
+KEAN STEVEN J                    0.0                0.0            0.0   
+BECK SALLY W                     0.0                0.0            0.0   
+
+                      other  expenses  director_fees  total_payments  \
+KAMINSKI WINCENTY J  4669.0   83585.0            0.0       1086821.0   
+KEAN STEVEN J        1231.0   41953.0            0.0       1747522.0   
+BECK SALLY W          566.0   37172.0            0.0        969068.0   
+
+                     exercised_stock_options  restricted_stock  \
+KAMINSKI WINCENTY J                 850010.0          126027.0   
+KEAN STEVEN J                      2022048.0         4131594.0   
+BECK SALLY W                             0.0          126027.0   
+
+                     restricted_stock_deferred  total_stock_value  \
+KAMINSKI WINCENTY J                        0.0           976037.0   
+KEAN STEVEN J                              0.0          6153642.0   
+BECK SALLY W                               0.0           126027.0   
+
+                     to_messages  from_poi_to_this_person  from_messages  \
+KAMINSKI WINCENTY J       4607.0                     41.0        14368.0   
+KEAN STEVEN J            12754.0                    140.0         6759.0   
+BECK SALLY W              7315.0                    144.0         4343.0   
+
+                     from_this_person_to_poi  shared_receipt_with_poi  
+KAMINSKI WINCENTY J                    171.0                    583.0  
+KEAN STEVEN J                          387.0                   3639.0  
+BECK SALLY W                           386.0                   2639.0  
+#######Email feature Name:  from_messages   End ###########
+#######Email feature Name:  from_this_person_to_poi   Start ###########
+                  poi    salary      bonus  long_term_incentive  \
+DELAINEY DAVID W  1.0  365163.0  3000000.0            1294981.0   
+LAVORATO JOHN J   0.0  339288.0  8000000.0            2035380.0   
+KEAN STEVEN J     0.0  404338.0  1000000.0             300000.0   
+
+                  deferred_income  deferral_payments  loan_advances   other  \
+DELAINEY DAVID W              0.0                0.0            0.0  1661.0   
+LAVORATO JOHN J               0.0                0.0            0.0  1552.0   
+KEAN STEVEN J                 0.0                0.0            0.0  1231.0   
+
+                  expenses  director_fees  total_payments  \
+DELAINEY DAVID W   86174.0            0.0       4747979.0   
+LAVORATO JOHN J    49537.0            0.0      10425757.0   
+KEAN STEVEN J      41953.0            0.0       1747522.0   
+
+                  exercised_stock_options  restricted_stock  \
+DELAINEY DAVID W                2291113.0         1323148.0   
+LAVORATO JOHN J                 4158995.0         1008149.0   
+KEAN STEVEN J                   2022048.0         4131594.0   
+
+                  restricted_stock_deferred  total_stock_value  to_messages  \
+DELAINEY DAVID W                        0.0          3614261.0       3093.0   
+LAVORATO JOHN J                         0.0          5167144.0       7259.0   
+KEAN STEVEN J                           0.0          6153642.0      12754.0   
+
+                  from_poi_to_this_person  from_messages  \
+DELAINEY DAVID W                     66.0         3069.0   
+LAVORATO JOHN J                     528.0         2585.0   
+KEAN STEVEN J                       140.0         6759.0   
+
+                  from_this_person_to_poi  shared_receipt_with_poi  
+DELAINEY DAVID W                    609.0                   2097.0  
+LAVORATO JOHN J                     411.0                   3962.0  
+KEAN STEVEN J                       387.0                   3639.0  
+#######Email feature Name:  from_this_person_to_poi   End ###########
+#######Email feature Name:  shared_receipt_with_poi   Start ###########
+                   poi    salary      bonus  long_term_incentive  \
+BELDEN TIMOTHY N   1.0  213999.0  5249999.0                  0.0   
+SHAPIRO RICHARD S  0.0  269076.0   650000.0                  0.0   
+LAVORATO JOHN J    0.0  339288.0  8000000.0            2035380.0   
+
+                   deferred_income  deferral_payments  loan_advances  \
+BELDEN TIMOTHY N         2334434.0          2144013.0            0.0   
+SHAPIRO RICHARD S              0.0                0.0            0.0   
+LAVORATO JOHN J                0.0                0.0            0.0   
+
+                      other  expenses  director_fees  total_payments  \
+BELDEN TIMOTHY N   210698.0   17355.0            0.0       5501630.0   
+SHAPIRO RICHARD S     705.0  137767.0            0.0       1057548.0   
+LAVORATO JOHN J      1552.0   49537.0            0.0      10425757.0   
+
+                   exercised_stock_options  restricted_stock  \
+BELDEN TIMOTHY N                  953136.0          157569.0   
+SHAPIRO RICHARD S                 607837.0          379164.0   
+LAVORATO JOHN J                  4158995.0         1008149.0   
+
+                   restricted_stock_deferred  total_stock_value  to_messages  \
+BELDEN TIMOTHY N                         0.0          1110705.0       7991.0   
+SHAPIRO RICHARD S                        0.0           987001.0      15149.0   
+LAVORATO JOHN J                          0.0          5167144.0       7259.0   
+
+                   from_poi_to_this_person  from_messages  \
+BELDEN TIMOTHY N                     228.0          484.0   
+SHAPIRO RICHARD S                     74.0         1215.0   
+LAVORATO JOHN J                      528.0         2585.0   
+
+                   from_this_person_to_poi  shared_receipt_with_poi  
+BELDEN TIMOTHY N                     108.0                   5521.0  
+SHAPIRO RICHARD S                     65.0                   4527.0  
+LAVORATO JOHN J                      411.0                   3962.0  
+#######Email feature Name:  shared_receipt_with_poi   End ###########
+LAY KENNETH L         15
+FREVERT MARK A        13
+SKILLING JEFFREY K    12
+BELDEN TIMOTHY N      10
+BUY RICHARD B          8
+HAEDICKE MARK E        8
+WHALLEY LAWRENCE G     8
+BAXTER JOHN C          8
+LAVORATO JOHN J        8
+KEAN STEVEN J          7
+KITCHEN LOUISE         6
+ALLEN PHILLIP K        6
+RICE KENNETH D         6
+DELAINEY DAVID W       6
+BECK SALLY W           5
+dtype: int64
+Total new features =  ['poi', 'salary', 'bonus', 'long_term_incentive', 'deferred_income', 'deferral_payments', 'loan_advances', 'other', 'expenses', 'total_payments', 'exercised_stock_options', 'restricted_stock', 'restricted_stock_deferred', 'total_stock_value', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'to_poi_ratio', 'from_poi_ratio', 'shared_poi_ratio', 'bonus_to_salary_ratio', 'bonus_to_total_ratio', 'non_salary']
+########## Gaussian NB Starts ##########
+GaussianNB(priors=None)
+	Accuracy: 0.78373	Precision: 0.25396	Recall: 0.32100	F1: 0.28357	F2: 0.30490
+	Total predictions: 15000	True positives:  642	False positives: 1886	False negatives: 1358	True negatives: 11114
+
+########## Gaussian NB Ends ##########
+########## Feature Selection Starts ##########
+[1.37531710e+01 4.15093273e+01 1.15864260e+01 2.33537996e+01
+ 4.63803483e-03 1.45426713e-01 1.03113107e-03 9.65455570e-01
+ 1.25169693e+01 2.67639863e+01 1.88303189e+01 4.76782053e-01
+ 3.32929653e+01 3.48817277e+00 1.48968800e+01 1.00018956e-02
+ 9.82524306e+00 1.63696675e+01 2.62367866e+00 1.15117387e+01
+ 5.95113162e+00 2.31928718e+01 2.58116866e+01 4.59300923e+01]
+salary score: 13.753171
+bonus score: 41.509327
+long_term_incentive score: 11.586426
+deferred_income score: 23.353800
+loan_advances score: 0.145427
+expenses score: 0.965456
+total_payments score: 12.516969
+exercised_stock_options score: 26.763986
+restricted_stock score: 18.830319
+restricted_stock_deferred score: 0.476782
+total_stock_value score: 33.292965
+to_messages score: 3.488173
+from_poi_to_this_person score: 14.896880
+from_messages score: 0.010002
+from_this_person_to_poi score: 9.825243
+shared_receipt_with_poi score: 16.369668
+to_poi_ratio score: 2.623679
+from_poi_ratio score: 11.511739
+shared_poi_ratio score: 5.951132
+bonus_to_salary_ratio score: 23.192872
+bonus_to_total_ratio score: 25.811687
+non_salary score: 45.930092
+Kbest Features : ['poi', 'salary', 'bonus', 'long_term_incentive', 'deferred_income', 'loan_advances', 'expenses', 'total_payments', 'exercised_stock_options', 'restricted_stock', 'restricted_stock_deferred', 'total_stock_value', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'to_poi_ratio', 'from_poi_ratio', 'shared_poi_ratio', 'bonus_to_salary_ratio', 'bonus_to_total_ratio', 'non_salary']
+########## Feature Selection Ends ##########
+########## KBest with AdaBoost Starts ##########
+Final feature set  ['poi', 'salary', 'bonus', 'long_term_incentive', 'deferred_income', 'loan_advances', 'expenses', 'total_payments', 'exercised_stock_options', 'restricted_stock', 'restricted_stock_deferred', 'total_stock_value', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'to_poi_ratio', 'from_poi_ratio', 'shared_poi_ratio', 'bonus_to_salary_ratio', 'bonus_to_total_ratio', 'non_salary']
+AdaBoostClassifier(algorithm='SAMME.R',
+          base_estimator=DecisionTreeClassifier(class_weight='balanced', criterion='gini', max_depth=1,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=2, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best'),
+          learning_rate=0.8, n_estimators=50, random_state=None)
+	Accuracy: 0.89147	Precision: 0.60011	Recall: 0.55750	F1: 0.57802	F2: 0.56553
+	Total predictions: 15000	True positives: 1115	False positives:  743	False negatives:  885	True negatives: 12257
+
+
+
+########## Dump Classifiers, dataset and features_list ##########
+Successfully created clf, my_dataset and features_list pkl files
+########## References ##########
+#https://www.analyticsvidhya.com/blog/2015/11/quick-introduction-boosting-algorithms-machine-learning/ 
+ https://civisanalytics.com/blog/data-science/2016/01/06/workflows-python-using-pipeline-gridsearchcv-for-compact-code/ 
+http://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SelectKBest.html 
+http://scikit-learn.org/stable/modules/pipeline.html 
+https://civisanalytics.com/blog/data-science/2015/12/17/workflows-in-python-getting-data-ready-to-build-models/
